@@ -30,25 +30,86 @@
     align-items: center;
     padding-top: 30px;
 }
-.logo{
+/* .logo{
     width: 15%;
     padding-top: 10px;
 }
 .logo > img{
     width: 100%;
     height: 100%;
-}
+} */
 .hamburger{
     display: none;
+    width: 2%;
 }
 .sidebar{
     display: none;
+    border-radius: 60px;
+    border: none;
+    width: 50%;
+    position: absolute;
+    right: 0;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #94A2B3;
+}
+.sidenav ul{
+    padding-top: 10px;
+    list-style: none;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.sidenav ul li{
+   padding-bottom: 10px;
+ }
+.sidenav ul a{
+   text-decoration: none;
+  color: #272D4E;
+  font-size: 18px;
+  font-family: var(--font-family-primary);
+}
+.sidenav ul a:hover{
+    border-bottom: 5px solid #272D4E;
+    transition: all 0.3s ease-in-out;
+ }
+ .side-div{
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     align-items: center;
+     padding-bottom: 10px;
+ }
+ .side-div a{
+    text-decoration: none;
+    color: #272D4E;
+    font-size: 18px;
+    padding-bottom: 10px;
+    font-family: var(--font-family-primary);
+}
+.side-div button{
+    background-color: #7854F7;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    border: none;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-family: var(--font-family-primary);
+}
+.side-div button:hover{
+    color: #7854F7;
+    background-color: white;
 }
 .sell{
-    width: 60%;
+    width: 50%;
+    text-align: left;
 }
 .sell ul{
-    width: 50%;
+    width: 85%;
     list-style: none;
     display: flex;
     justify-content: space-between;
@@ -62,7 +123,7 @@
     font-family: var(--font-family-primary);
 }
 .search-div{
-    width: 15%;
+    width: 20%;
     display: flex;
     text-align: right;
     justify-content: space-between;
@@ -117,6 +178,10 @@
     border-radius: 60px;
     border: none;
     font-family: var(--font-family-primary);
+}
+.hero-text button:hover{
+    color: #7854F7;
+    background-color: white;
 }
 .hero-text span{
     font-size: 22px;
@@ -275,6 +340,10 @@
     border: none;
     font-family: var(--font-family-primary);
  }
+ .first-pic-text button:hover{
+    color: #70C217;
+    background-color: white;
+ }
 .second-stage{
     width: 80%;
     margin: auto;
@@ -313,6 +382,10 @@
     border-radius: 30px;
     border: none;
     font-family: var(--font-family-primary);
+ }
+ .first-pic-text1 button:hover{
+    color: #70C217;
+    background-color: white;
  }
 .second-pics{
     width: 50%;
@@ -583,6 +656,10 @@
     border-radius: 30px;
     color: white;
  }
+ .section6-div button:hover{
+    color: #5F37EF;
+    background-color: white;
+ }
  .ecllipse{
      width: 3%;
     margin-bottom: -5px;
@@ -684,4 +761,540 @@
     font-family: var(--font-family-primary);
     text-decoration: underline;
     color:  #272D4E;
+  }
+  @media screen and (max-width: 1024px){
+      .sell,.search-div{
+          display: none;
+      }
+      .hamburger{
+          display: block;
+      }
+      .sidebar.active{
+          display: block;
+      }
+      .hero-text h1{
+        font-size: 55px;
+    }
+    .hero-text p{
+        font-size: 18px;
+    }
+    .hero-text button{
+        font-size: 14px;
+        padding: 15px 30px;
+    }
+    .hero-text span{
+        font-size: 18px;
+    }
+    .hero-text span a{
+        font-size: 18px;
+    }
+    .ecommerce{
+        width: 50%;
+        font-size: 30px;
+    }
+    .group27{
+        text-align: center;
+    }
+    .group-text h3{
+        font-size: 26px;
+        margin-left: 0px;
+    }
+    .group-text p{
+        font-size: 16px;
+        margin-left: 0px;
+    }
+    .group-text a{
+        font-size: 16px;
+        margin-left: 0px;
+    }
+    .group h3{
+        font-size: 26px;
+        margin-left: 0px;
+    }
+    .group p{
+        font-size: 16px;
+        margin-left: 0px;
+    }
+    .group a{
+        font-size: 16px;
+        margin-left: 0px;
+    }
+    .innerstage{
+        width: 80%;
+    }
+    .first-pics{
+        width: 50%;
+    }
+    .first-pic-text{
+        width: 100%;
+        margin-top: 30px;
+    }
+    .first-pic-text h2{
+       font-size: 30px;
+    }
+    .first-pic-text p{
+        font-size: 16px;
+        line-height: 25px;
+     }
+     .first-pic-text button{
+        font-size: 16px;
+        padding: 7px 14px;
+     }
+     .innerstage2{
+        width: 80%;
+    }
+    .first-pic-text1{
+        width: 100%;
+        margin-top: 30px;
+    }
+    .first-pic-text1 h2{
+       font-size: 30px;
+    }
+    .first-pic-text1 p{
+        font-size: 16px;
+        line-height: 25px;
+     }
+     .first-pic-text1 button{
+        font-size: 16px;
+        padding: 7px 14px;
+     }
+     .trusted {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .pic {
+        width: 15%;
+    }
+    .pic > img {
+        width: 100%;
+        height: 100%;
+    }
+    .boxes-bg p {
+        font-size: 18px;
+        line-height: 30px;
+    }
+    .smallarrow{
+       left: 100px;
+    }
+    .bigarrow{
+       left: 150px;
+    }
+    .section5 h2{
+        font-size: 40px;
+    }
+    .section5 p{
+        font-size: 16px;
+    }
+    .section6-div h2{
+       font-size: 30px;
+    }
+    .section6-div h2 span{
+       font-size: 30px;
+    }
+    .section6-div button{
+        font-size: 16px;
+     }
+     .ecllipse{
+       top: 90%;
+    }
+  }
+  @media screen and (max-width: 768px){
+    .hero-section{
+        flex-direction: column;
+        margin-top: 30px;
+        align-items: center;
+    }  
+    .hero-text{
+        width: 80%;
+        margin: auto;
+        text-align: center;
+    }
+    .hero-img{
+        width: 70%;
+        margin: 50px auto;
+    }
+    .ecommerce{
+        width: 50%;
+        font-size: 24px;
+    }
+    .innersection2{
+        flex-direction: column;
+    }
+    .group27{
+        width: 80%;
+        margin: auto;
+    }
+    .section3{
+       margin-top: 50px;
+    }
+    .first-pics{
+        width: 50%;
+    }
+    .second-pics{
+        width: 50%;
+    }
+    .first-pic-text h2{
+        font-size: 22px;
+     }
+     .first-pic-text p{
+         font-size: 14px;
+         line-height: 20px;
+      }
+      .first-pic-text button{
+         font-size: 14px;
+      }
+      .first-pic-text1 h2{
+        font-size: 22px;
+     }
+     .first-pic-text1 p{
+         font-size: 14px;
+         line-height: 20px;
+      }
+      .first-pic-text1 button{
+         font-size: 14px;
+      }
+      .trusted {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .pic1 {
+        position: absolute;
+        top: 70px;
+        left: 15%;
+    }
+    .pic5 {
+        position: absolute;
+        top: 80px;
+        right: 70px;
+    }
+    .pic6 {
+        position: absolute;
+        bottom: 30px;
+        right: 50px;
+    }
+    .quote {
+       width: 60%;
+       margin-top: 20px;
+    }
+    .quote > img{
+       width: 100%;
+       height: 100%;
+    }
+    .boxes-bg p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .section5{
+        width: 60%;
+    }
+    .section5 h2{
+        font-size: 30px;
+    }
+    .section5 p{
+        font-size: 14px;
+    }
+    .section6-div h2{
+        width: 90%;
+       font-size: 18px;
+    }
+    .section6-div h2 span{
+       font-size: 18px;
+    }
+    .section6-div button{
+        font-size: 12px;
+        padding: 10px 20px;
+     }
+     .icons p{
+        font-size: 14px;
+    }
+    .logo2{
+      width: 30%;
+      margin: auto;
+    }
+    .logo2 > img{
+        width: 100%;
+        height: 100%;
+      }
+      .midfooter{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .midfooter h4{
+        font-size: 12px;
+      }
+      .midfooter p{
+          font-size: 10px;
+        }
+        .last-section{
+            width: 90%;
+        }
+        .copyright p{
+            font-size: 10px;
+          }
+          .copyright p span{
+            font-size: 10px;
+          }
+          .twitter{
+              width: 20%;
+          }
+          .twitter > img{
+            width: 100%;
+            height: 100%;
+        }
+        .automatic{
+            width: 25%;  
+        }
+        .automatic > img{
+            width: 100%;
+            height: 100%;
+        }
+  }
+  @media screen and (max-width: 425px){
+    .hamburger{
+        width: 5%;
+    }
+    @keyframes identifier {
+        0%{background-color: #8f839c;}
+        25%{background-color: rgb(211, 191, 164)}
+        50%{background-color: #c9cdd3;}
+        100%{background-color: #575a5e;}
+
+        from{
+            margin-right:0px;
+        }
+        50%{
+            margin-right: 100px;
+        }
+        to{
+            margin-right: 0px
+        }
+    }
+    .sidebar{
+        width: 100%;
+        background-color: #94A2B3;
+        animation-name: identifier;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+    }
+    .hero-text{
+        width: 85%;
+        margin: auto;
+        text-align: center;
+    }
+    .hero-text h1{
+        font-size: 30px;
+    }
+    .hero-text p{
+        font-size: 14px;
+    }
+    .hero-text button{
+        font-size: 12px;
+        padding: 10px 20px;
+    }
+    .hero-text span{
+        font-size: 12px;
+    }
+    .hero-text span a{
+        font-size: 12px;
+    }
+    .ecommerce{
+        width: 70%;
+        font-size: 20px;
+    }
+    .first-pic-text h2{
+        font-size: 16px;
+     }
+     .first-pic-text p{
+         font-size: 12px;
+         line-height: 20px;
+      }
+      .first-pic-text button{
+         font-size: 12px;
+      }
+      .first-pic-text1 h2{
+        font-size: 16px;
+     }
+     .first-pic-text1 p{
+         font-size: 12px;
+         line-height: 20px;
+      }
+      .first-pic-text1 button{
+         font-size: 12px;
+      }
+      .first-circle{
+        width: 25%;
+        top: -7%;
+        left: 20%;
+        /* padding-top: 100px; */
+
+    }
+    .first-pic-text{
+        margin-top: 0px;
+    }
+    .second-circle{
+        width: 40%;
+        bottom: 3%;
+       left: 35%;
+    }
+    .first-pics{
+        width: 70%;
+    }
+    .innerstage{
+        /* justify-content: none; */
+        margin-right: 0px;
+      flex-direction: column;
+    }
+    .innerstage2{
+    flex-direction: column;
+    align-items: right;
+}
+.second-pics{
+    width: 60%;
+    margin-bottom: -30px;
+}
+.trusted {
+    font-size: 24px;
+    line-height: 30px;
+}
+.pic2 {
+    position: absolute;
+    bottom: 280px;
+    left: 20px
+}
+.pic3 {
+    position: absolute;
+    top: 200px
+}
+.pic4 {
+    position: absolute;
+    right: 0;
+    top: 200px;
+}
+.pic6 {
+    position: absolute;
+    bottom: 250px;
+    left: 240px;
+}
+.dots {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%
+}
+
+.boxes {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 80%;
+    /* width: 60%;
+    height: 50%; */
+    /* background: red; */
+}
+.boxes-1 {
+    width: 90%;
+    top: 20% !important;
+}
+
+.boxes-2 {
+    top: 15%;
+    width: 95%;
+    margin: auto;
+    /* background: gold !important */
+}
+.main_content {
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    width: 60%;
+    height: 35%;
+}
+.arrow {
+    position: absolute;
+    bottom: 150px;
+    right: 250px;
+}
+.smallarrow{
+   width: 20px;
+}
+.bigarrow{
+   width: 40px;
+}
+.boxes-bg p {
+    font-size: 10px;
+    line-height: 10px;
+}
+.section5{
+    margin-top: -200px;
+}
+.section6-div{
+    width: 90%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.section6-div h2{
+   font-size: 12px;
+}
+.section6-div h2 span{
+   font-size: 12px;
+}
+.section6-div button{
+    font-size: 10px;
+    padding: 7px 14px;
+ }
+ .innerfooter{
+    width: 90%;
+}
+ .icon-div{
+    width: 70%; 
+}
+ .icon-div > img{
+    width: 100%; 
+    height: 100%; 
+}
+.icons p{
+    font-size: 10px;
+}
+.logo2{
+    width: 30%;
+    margin:0px auto;
+    padding:50px 0px ;
+  }
+  .logo2 > img{
+      width: 100%;
+      height: 100%;
+    }
+    .midfooter{
+        width: 90%;
+        padding: 30px 0px;
+        gap: 10px;
+    }
+    .midfooter h4{
+        font-size: 8px;
+        padding-bottom: 10px;
+      }
+      .midfooter p{
+        font-size: 8px;
+        line-height: 10px;
+      }
+      .last-section{
+        width: 95%;
+    }
+    .copyright p{
+      font-size: 8px;
+      text-align: center;
+    }
+    .copyright p span{
+      font-size: 8px;
+      text-align: center;
+    }
+    .group-text a{
+        font-size: 13px;
+    }
+    .group a{
+        font-size: 13px;
+    }
   }
