@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <title>Signup page</title>
+    <script src="https://use.fontawesome.com/34763c85cb.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="background">
+            <!-- <img src="./images/background.svg" alt="background" /> -->
+        </div>
+        <div class="page">
+            <div class="dropdown">
+                <div onclick="myLanguage()" class="dropbtn">English (Uk) <span><i class="fa fa-caret-down"></i></span>
+                </div>
+                <div id="myDropdown" class="dropdownlist">
+                    <a href="#">English(US)</a>
+                    <a href="#">Hausa</a>
+                    <a href="#">Igbo</a>
+                    <a href="#">Yoruba</a>
+                </div>
+            </div>
+            <div class="create">
+                <h2 class="account">Create Account</h2>
+                <div class="stage2">
+                    <div class="google">
+                        <div class="google-img"> 
+                            <img src="./images/google.svg" alt="google" />
+                        </div>
+                        <a href="#">Sign up with Google</a>
+                    </div>
+                    <div class="facebook">
+                        <div class="facebook-img">
+                            <img src="./images/facebook.svg" alt="facebook" />
+                        </div>
+                        <a href="#">Sign up with Facebook</a>
+                    </div>
+                </div>
+                <div class="or">
+                    <p> - OR -</p>
+                </div>
+                <form class="form">
+                    <div>
+                        <input type="text" placeholder="Full Name" class="name" required />
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Email Address" class="email" required />
+                    </div>
+                    <div class="eyeslash">
+                        <input type="password" placeholder="Password" class="password" id="password" required />
+                        <span class="eye" onclick="myFunction()">
+                            <i id="hide1" class="fa fa-eye-slash"></i>
+                            <i id="hide2" class="fa fa-eye"></i>
+                        </span>
+                    </div>
+                    <button class="button">Create Account</button>
+                </form>
+                <div class="login">
+                    <h3>Already have an account?  <a href="#">Login</a> </h3>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+    function myLanguage() {
+        document.getElementById("myDropdown")
+            .classList.toggle("active");
+    }
+    window.onclick = function (event) {
+        if
+            (!event.target.matches('.fa')) {
+            let dropdowns = document.getElementsByClassName("dropdownlist");
+            let i;
+            for (i = 0; i < dropdowns.length; i++) {
+                let openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('active')) {
+                    openDropdown.classList.remove('active')
+                }
+            }
+        }
+    }
+    function myFunction() {
+        let password = document.getElementById("password");
+        console.log(password.type);
+        if (password.type === "password") {
+            password.type = "text";
+            document.getElementById("hide2").style.display = "none";
+            document.getElementById("hide1").style.display = "block";
+        } else {
+            password.type = "password";
+            document.getElementById("hide1").style.display = "none";
+            document.getElementById("hide2").style.display = "block";
+        }
+    }
+</script>
