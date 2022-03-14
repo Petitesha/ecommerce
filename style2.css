@@ -44,7 +44,7 @@
 }
 .sidebar{
     display: none;
-    border-radius: 60px;
+    border-radius: 30px;
     border: none;
     width: 50%;
     position: absolute;
@@ -1277,7 +1277,8 @@
     }
     .midfooter{
         flex-direction: column;
-        align-items: center;
+        text-align: center;
+        /* align-items: center; */
         width: 90%;
         padding: 30px 0px;
         gap: 10px;
@@ -1286,7 +1287,7 @@
     }
     .midfooter h4{
         font-size: 8px;
-        padding-bottom: 10px;
+        padding-bottom: 5px;
       }
       .midfooter p{
         font-size: 8px;
